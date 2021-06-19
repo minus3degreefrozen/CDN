@@ -32,17 +32,43 @@ header .brand-logo .logo-span{
     #tidio-chat-iframe { bottom: 50px !important; }
 }
 
-/* 主题字体自定义 */
-@font-face{
-    font-family: 'NotoSerifSC-Regular';
-    src: url('../fonts/Noto_Serif_SC/NotoSerifSC-Regular.otf');
-}
 /* 全局字体自定义 */
-body{
-    font-family: 'NotoSerifSC-Regular';
-    font-size: 1.1rem;
+body {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1rem;
 }
-
+/* 局部字体自定义 */
+#articleContent > p {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 1.5rem;
+}
+#articleContent > ol {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 1.5rem;
+}
+#articleContent > ul {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 1.5rem;
+}
+#articleContent > blockquote {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 1.5rem;
+}
+#articleContent > p > code {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 1.5rem;
+}
+#articleContent > ol > li > ul > li > code {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 1.5rem;
+}
+#articleContent > table {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 1.5rem;
+}
+#articleContent > div > pre > code {
+    font-family: 'JetBrains Mono', monospace;
+}
 /* 外挂标签样式 */
 .note {
     margin-bottom: 15px;
