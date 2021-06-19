@@ -1,0 +1,288 @@
+/* Here is your custom css styles. */
+
+/* 首页LOGO文字彩虹颜色 */
+header .brand-logo .logo-span{
+    background-image: linear-gradient(to right,red,orange,#ff0,green,#ff0,orange,red,orange,#ff0,green,#ff0,orange,red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: masked-animation 3.5s linear infinite;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+@keyframes masked-animation{
+    0%{background-position:0 0}100%{background-position:-100% 0}
+}
+@media only screen and (max-width: 601px) {
+    header .brand-logo .logo-span {
+        font-size: 1.5rem;
+    }
+}
+
+/* 自动隐藏导航栏 */
+.navbar-fixed.is-hidden {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+/* 调整tidio聊天位置 */
+#tidio-chat-iframe { bottom: 110px !important; }
+@media only screen and (max-width: 980px) {
+    #tidio-chat-iframe { bottom: 50px !important; }
+}
+
+/* 主题字体自定义 */
+@font-face{
+    font-family: 'NotoSerifSC-Regular';
+    src: url('../fonts/Noto_Serif_SC/NotoSerifSC-Regular.otf');
+}
+/* 全局字体自定义 */
+body{
+    font-family: 'NotoSerifSC-Regular';
+    font-size: 1.1rem;
+}
+
+/* 外挂标签样式 */
+.note {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #ebf7fd;
+    color: #2d7091;
+    border: 1px solid rgba(45, 112, 145, 0.3);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 #ffffff;
+}
+.note-info {
+    background: #e8f4fd;
+    color: #2e618d;
+    border-left: 6px solid rgba(23, 105, 170);
+    font-weight: 600;
+}
+.note-success {
+    background: #ebf9ed;
+    color: #408140;
+    border-left: 6px solid rgba(43, 138, 56);
+    font-weight: 600;
+}
+.note-warning {
+    background: #fff8e9;
+    color: #a87937;
+    border-left: 6px solid rgb(178, 132, 30);
+    font-weight: 600;
+}
+.note-danger {
+    background: #feefee;
+    color: #eb360d;
+    border-left: 6px solid rgb(254, 95, 88);
+    font-weight: 600;
+}
+.note-quote {
+    background: #e8f4fd;
+    color: #2196f3;
+    border-left: 6px solid rgb(33, 150, 243);
+    font-weight: 600;
+}
+.note-check {
+    background: #ebf9ed;
+    color: #408140;
+    border-left: 6px solid rgba(43, 138, 56);
+    font-weight: 600;
+}
+.note-error {
+    background: #feefee;
+    color: #eb360d;
+    border-left: 6px solid rgb(254, 95, 88);
+    font-weight: 600;
+}
+.tip-info {
+    position: relative;
+    color: #fff;
+    background: #20a0ff;
+    background: -webkit-gradient(linear, left top, right top, from(#20a0ff), to(#20b8ff));
+    background: -webkit-linear-gradient(left, #5b1bd0, #20b8ff);
+    background: linear-gradient(90deg, #0092ff, #6a3fb9);
+    padding: 6px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 5px rgb(32 160 255 / 50%);
+    box-shadow: 0 3px 5px rgb(32 160 255 / 50%);
+    margin-bottom: 20px;
+}
+.tip-info:before {
+    background: #20a0ff;
+    background: -webkit-gradient( linear, left bottom, left top, from(#0092ff), to(#20b8ff) );
+    background: -webkit-linear-gradient(bottom, #0092ff, #20b8ff);
+    background: linear-gradient(0deg, #0092ff, #20b8ff);
+    border-radius: 50%;
+    color: #fff;
+    content: "\f129";
+    font-size: 12px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24.5px;
+    left: -12px;
+    top: -12px;
+    -webkit-box-shadow: 0 0 0 2.5px #fff;
+    box-shadow: 0 0 0 2.5px #fff;
+    font-weight: 600;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+}
+.tip-success {
+    position: relative;
+    color: #fff;
+    background: #61be33;
+    background: -webkit-gradient( linear, left top, right top, from(#61be33), to(#8fce44) );
+    background: -webkit-linear-gradient(left, #61be33, #8fce44);
+    background: linear-gradient(90deg, #61be33, #8fce44);
+    padding: 6px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 5px rgb(104 195 59 / 50%);
+    box-shadow: 0 3px 5px rgb(104 195 59 / 50%);
+    margin-bottom: 20px;
+}
+.tip-success:before {
+    background: #61be33;
+    background: -webkit-gradient( linear, left bottom, left top, from(#52bb1d), to(#95d34b) );
+    background: -webkit-linear-gradient(bottom, #52bb1d, #95d34b);
+    background: linear-gradient(0deg, #52bb1d, #95d34b);
+    border-radius: 50%;
+    color: #fff;
+    content: "\f00c";
+    font-size: 12px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24.5px;
+    left: -12px;
+    top: -12px;
+    -webkit-box-shadow: 0 0 0 2.5px #fff;
+    box-shadow: 0 0 0 2.5px #fff;
+    font-weight: 600;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+}
+.tip-warning {
+    position: relative;
+    color: #fff;
+    background: #ff953f;
+    background: -webkit-gradient( linear, left top, right top, from(#ff953f), to(#ffb449) );
+    background: -webkit-linear-gradient(left, #ff953f, #ffb449);
+    background: linear-gradient(90deg, #ff953f, #ffb449);
+    padding: 6px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 5px rgb(255 154 73 / 50%);
+    box-shadow: 0 3px 5px rgb(255 154 73 / 50%);
+    margin-bottom: 20px;
+}
+.tip-warning:before {
+    background: #ff953f;
+    background: -webkit-gradient( linear, left bottom, left top, from(#ff8f35), to(#ffc149) );
+    background: -webkit-linear-gradient(bottom, #ff8f35, #ffc149);
+    background: linear-gradient(0deg, #ff8f35, #ffc149);
+    border-radius: 50%;
+    color: #fff;
+    content: "\f12a";
+    font-size: 12px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24.5px;
+    left: -12px;
+    top: -12px;
+    -webkit-box-shadow: 0 0 0 2.5px #fff;
+    box-shadow: 0 0 0 2.5px #fff;
+    font-weight: 600;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+}
+.tip-danger {
+    position: relative;
+    color: #fff;
+    background: #ff4949;
+    background: -webkit-gradient( linear, left top, right top, from(#ff4949), to(#ff7849) );
+    background: -webkit-linear-gradient(left, #ff4949, #ff7849);
+    background: linear-gradient(90deg, #ff4949, #ff7849);
+    padding: 6px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 5px rgb(255 73 73 / 50%);
+    box-shadow: 0 3px 5px rgb(255 73 73 / 50%);
+    margin-bottom: 20px;
+}
+.tip-danger:before {
+    background: #ff953f;
+    background: -webkit-gradient( linear, left bottom, left top, from(#ff3838), to(#ff7849) );
+    background: -webkit-linear-gradient(bottom, #ff3838, #ff7849);
+    background: linear-gradient(0deg, #ff3838, #ff7849);
+    border-radius: 50%;
+    color: #fff;
+    content: "\f00d";
+    font-size: 12px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24.5px;
+    left: -12px;
+    top: -12px;
+    -webkit-box-shadow: 0 0 0 2.5px #fff;
+    box-shadow: 0 0 0 2.5px #fff;
+    font-weight: 600;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+}
+.tip-quote {
+    position: relative;
+    color: #fff;
+    background: #15e5ff;
+    background: -webkit-gradient( linear, left top, right top, from(#5bc6d4) to(#0ec0ef) );
+    background: -webkit-linear-gradient(left, #0ec0ef, #80e0f9);
+    background: linear-gradient(90deg, #0ec0ef, #80e0f7);
+    padding: 6px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 5px #01caff;
+    box-shadow: 0 3px 5px #01caff;
+    margin-bottom: 20px;
+}
+.tip-quote:before {
+    background: #15e5ff;
+    background: -webkit-gradient( linear, left bottom, left top, form(#0ec0ee) to(#0ee0cc) );
+    background: -webkit-linear-gradient(bottom, #0ec0ee, #0ec2ee);
+    background: linear-gradient(0deg, #0ec0ee, #0ec0ea);
+    border-radius: 50%;
+    color: #fff;
+    content: "\f10d";
+    font-size: 12px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24.5px;
+    left: -12px;
+    top: -12px;
+    -webkit-box-shadow: 0 0 0 2.5px #fff;
+    box-shadow: 0 0 0 2.5px #fff;
+    font-weight: 600;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+}
+.tip-quote:after {
+    background: #15e5ff;
+    background: -webkit-gradient( linear, left bottom, left top, form(#0ec0ee) to(#0ee0cc) );
+    background: -webkit-linear-gradient(bottom, #0ec0ee, #0ec2ee);
+    background: linear-gradient(0deg, #0ec0ee, #0ec0ea);
+    border-radius: 50%;
+    color: #fff;
+    content: "\f10e";
+    font-size: 12px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24.5px;
+    right: -12px;
+    bottom: -12px;
+    -webkit-box-shadow: 0 0 0 2.5px #fff;
+    box-shadow: 0 0 0 2.5px #fff;
+    font-weight: 600;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+}
