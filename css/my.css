@@ -26,6 +26,12 @@ header .brand-logo .logo-span{
             transform: translateY(-100%);
 }
 
+/* 长公式折行 */
+.formula {
+    width: 100%;
+    overflow-x: auto
+}
+
 /* 调整tidio聊天位置 */
 #tidio-chat-iframe { bottom: 110px !important; }
 @media only screen and (max-width: 980px) {
