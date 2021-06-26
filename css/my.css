@@ -27,10 +27,10 @@ header .brand-logo .logo-span{
 }
 
 /* 长公式折行 */
-.formula {
+/* .formula {
     width: 100%;
     overflow-x: auto
-}
+} */
 
 /* 调整tidio聊天位置 */
 #tidio-chat-iframe { bottom: 110px !important; }
